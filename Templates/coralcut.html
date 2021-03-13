@@ -1,0 +1,733 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title> CoralCut - Welcome</title>
+  <link rel="icon"
+      type="image/png"
+    href = "https://cdn3.iconfinder.com/data/icons/multimedia-flat-colorful-long-shadow/614/1393_-_Video_Camera_I-512.png " >
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<style>
+
+img.one {
+  width: 140%;
+  height: 140% ;
+  border: 4px solid #7B68EE	;
+
+}
+
+.right {
+    float: left;
+    width: 50px;
+
+    padding: 0px;
+    position:absolute;
+	  top:2;
+	  left:2;
+}
+
+
+.text {
+  font-family:'Playball';
+
+  background-color: transparent;
+position: absolute;
+
+left: 570px;
+top:10px;
+font-size: 80px;
+color: black;
+
+}
+
+.text2 {
+  background-color: white;
+  border-color: white;
+position: absolute;
+right: 13px;
+top:12px;
+font-size: 20px;
+text-decoration-color: black;}
+.text1 {
+
+  background-color:transparent;
+position: absolute;
+
+left:650px;
+bottom:10px;
+font-size: 20px;
+color: black;
+}
+.strip {
+border: 4px solid white;
+background-color: white;
+
+}
+.rectangle {
+
+position: absolute;
+font-size: 40px;
+  top: 150px;
+  left : 450px;
+  height: 305px;
+  width: 550px;
+  background-color: white;
+}
+.rectangle1 {
+border: 4px solid black;
+position: absolute;
+font-size: 25px;
+  top: 10px;
+  left: 450px;
+  height: 80px;
+  width: 100px;
+  background-color: white;
+
+}
+.rectangle3 {
+border: 2px solid black;
+position: absolute;
+font-size: 25px;
+  top: 420px;
+  right: 40px;
+  height: 100px;
+  width: 210px;
+  background-color: white;
+
+}
+.rectangle2 {
+position: fixed;
+font-size: 25px;
+  top: 170px;
+  left: 20px;
+  height: 25px;
+  width: 150px;
+  background-color: transparent;}
+  .rectangle7 {
+  position: fixed;
+  font-size: 25px;
+    top: 215px;
+    left: 20px;
+    height: 25px;
+    width: 150px;
+    background-color: transparent;}
+    .rectangle9 {
+    position: fixed;
+    font-size: 25px;
+      top: 260px;
+      left: 20px;
+      height: 25px;
+      width: 150px;
+      background-color: transparent;}
+      .rectangle11 {
+      position: fixed;
+      font-size: 25px;
+        top: 305px;
+        left: 20px;
+        height: 25px;
+        width: 150px;
+        background-color: transparent;}
+        .rectangle13 {
+        position: fixed;
+        font-size: 25px;
+          top: 350px;
+          left: 20px;
+          height: 25px;
+          width: 150px;
+          background-color: transparent;}
+          .rectangle15 {
+          position: fixed;
+          font-size: 25px;
+            top: 395px;
+            left: 20px;
+            height: 25px;
+            width: 150px;
+            background-color: transparent;}
+            .rectangle17 {
+            position: fixed;
+            font-size: 25px;
+              top: 440px;
+              left: 20px;
+              height: 25px;
+              width: 150px;
+              background-color: transparent;}
+.rectangle6 {
+  position: fixed;
+  font-size: 25px;
+    top: 125px;
+    left: 20px;
+    height: 25px;
+    width: 150px;
+    background-color: transparent;}
+.rectangle4 {
+  position: fixed;
+  font-size: 25px;
+    top: 170px;
+    left: 190px;
+    height: 25px;
+    width: 150px;
+    background-color: transparent;}
+  .rectangle8 {
+      position: fixed;
+      font-size: 25px;
+        top: 215px;
+        left: 190px;
+        height: 25px;
+        width: 150px;
+        background-color: transparent;}
+        .rectangle10 {
+            position: fixed;
+            font-size: 25px;
+              top: 260px;
+              left: 190px;
+              height: 25px;
+              width: 150px;
+              background-color: transparent;}
+              .rectangle12 {
+                  position: fixed;
+                  font-size: 25px;
+                    top: 305px;
+                    left: 190px;
+                    height: 25px;
+                    width: 150px;
+                    background-color: transparent;}
+                    .rectangle14 {
+                        position: fixed;
+                        font-size: 25px;
+                          top: 350px;
+                          left: 190px;
+                          height: 25px;
+                          width: 150px;
+                          background-color: transparent;}
+                          .rectangle16 {
+                              position: fixed;
+                              font-size: 25px;
+                                top: 395px;
+                                left: 190px;
+                                height: 25px;
+                                width: 150px;
+                                background-color: transparent;}
+                                .rectangle18 {
+                                    position: fixed;
+                                    font-size: 25px;
+                                      top: 440px;
+                                      left: 190px;
+                                      height: 25px;
+                                      width: 150px;
+                                      background-color: transparent;}
+.rectangle5 {
+      position: fixed;
+      font-size: 25px;
+        top: 125px;
+        left: 190px;
+        height: 25px;
+        width: 150px;
+        background-color: transparent;}
+
+input[type=submit]{
+  border: 2px solid white;
+width:60%;
+background-color:black	;
+margin:10px;
+margin-left:none;
+padding:5px;
+color:white	;
+font-size: 15px;}
+input[type=file]{
+width:80%;
+background-color:black		;
+margin:5px;
+margin-right: 5px;
+padding:5px;
+color:white	;
+
+}
+input[type=button]{
+width:100%;
+background-color:black;			;
+padding:6px;
+color:white	;
+}
+ img.two {
+   width: 100%;
+   height: 100% ;}
+body{
+     background-color: #b1e6b1;
+   background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+
+
+
+
+   }
+   .downav {
+     height: 0px;
+     width: 20%;
+     position: fixed;
+     z-index: 1;
+     top: 265px;
+     left:  20px;
+     background-color: black;
+     overflow-y: hidden;
+     transition: 0.5s;
+
+   }
+
+   .downav a {
+
+     padding: 8px 8px 8px 34px;
+     text-decoration: none;
+     font-size: 23px;
+     color:white;
+     display: block;
+     transition: 0.3s;
+   }
+
+
+
+   .downav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 10px;
+     font-size: 36px;
+     margin-left: 50px;
+     background-color: black;
+   }
+   .downav1 {
+     height: 0px;
+     width: 20%;
+     position: fixed;
+     z-index: 1;
+     top: 265px;
+     left:  20px;
+     background-color: black;
+     overflow-y: hidden;
+     transition: 0.5s;
+
+   }
+
+   .downav1 a {
+
+     padding: 8px 8px 8px 34px;
+     text-decoration: none;
+     font-size: 23px;
+     color:white;
+     display: block;
+     transition: 0.3s;
+   }
+
+
+
+   .downav1 .closebtn {
+     position: absolute;
+     top: 0;
+     right: 10px;
+     font-size: 36px;
+     margin-left: 50px;
+     background-color: black;
+   }
+   .downav2 {
+     height: 0px;
+     width: 20%;
+     position: fixed;
+     z-index: 1;
+     top: 345px;
+     left:  20px;
+     background-color: black;
+     overflow-y: hidden;
+     transition: 0.5s;
+
+   }
+
+   .downav2 a {
+
+     padding: 8px 8px 8px 34px;
+     text-decoration: none;
+     font-size: 23px;
+     color:white;
+     display: block;
+     transition: 0.3s;
+   }
+
+
+
+   .downav2 .closebtn {
+     position: absolute;
+     top: 0;
+     right: 10px;
+     font-size: 36px;
+     margin-left: 50px;
+     background-color: black;
+   }
+   .downav3 {
+     height: 0px;
+     width: 20%;
+     position: fixed;
+     z-index: 1;
+     top: 345px;
+     left:  20px;
+     background-color: black;
+     overflow-y: hidden;
+     transition: 0.5s;
+
+   }
+
+   .downav3 a {
+
+     padding: 8px 8px 8px 34px;
+     text-decoration: none;
+     font-size: 23px;
+     color:white;
+     display: block;
+     transition: 0.3s;
+   }
+
+
+
+   .downav3 .closebtn {
+     position: absolute;
+     top: 0;
+     right: 10px;
+     font-size: 36px;
+     margin-left: 50px;
+     background-color: black;
+   }
+   .downav4 {
+     height: 0px;
+     width: 20%;
+     position: fixed;
+     z-index: 1;
+     top: 440px;
+     left:  20px;
+     background-color: black;
+     overflow-y: hidden;
+     transition: 0.5s;
+
+   }
+
+   .downav4 a {
+
+     padding: 8px 8px 8px 34px;
+     text-decoration: none;
+     font-size: 23px;
+     color:white;
+     display: block;
+     transition: 0.3s;
+   }
+
+
+
+   .downav4 .closebtn {
+     position: absolute;
+     top: 0;
+     right: 10px;
+     font-size: 36px;
+     margin-left: 50px;
+     background-color: black;
+   }
+   .downav5 {
+     height: 0px;
+     width: 20%;
+     position: fixed;
+     z-index: 1;
+     top: 440px;
+     left:  20px;
+     background-color: black;
+     overflow-y: hidden;
+     transition: 0.5s;
+
+   }
+
+   .downav5 a {
+
+     padding: 8px 8px 8px 34px;
+     text-decoration: none;
+     font-size: 23px;
+     color:white;
+     display: block;
+     transition: 0.3s;
+   }
+
+
+
+   .downav5 .closebtn {
+     position: absolute;
+     top: 0;
+     right: 10px;
+     font-size: 36px;
+     margin-left: 50px;
+     background-color: black;
+   }
+   .downav6 {
+     height: 0px;
+     width: 20%;
+     position: fixed;
+     z-index: 1;
+     top: 485px;
+     left:  20px;
+     background-color: black;
+     overflow-y: hidden;
+     transition: 0.5s;
+
+   }
+
+   .downav6 a {
+
+     padding: 8px 8px 8px 34px;
+     text-decoration: none;
+     font-size: 23px;
+     color:white;
+     display: block;
+     transition: 0.3s;
+   }
+
+
+
+   .downav6 .closebtn {
+     position: absolute;
+     top: 0;
+     right: 10px;
+     font-size: 36px;
+     margin-left: 50px;
+     background-color: black;
+   }
+</style>
+</head>
+<body >
+
+
+
+
+
+
+
+
+<div class="rectangle1">
+  <img class="two" src = "https://i.pinimg.com/originals/0c/cd/96/0ccd96bc52dc46b1f5f3ea89cad58ecb.gif">
+</div>
+ <div class= "text">  CoralCut
+</div>
+<div class= "text1">  Made with &#128150; by Doc & Tori
+</div>
+<div class="rectangle"><iframe height="100%" width="100%" src="{% static r %}">
+</iframe>
+  </div>
+<div class="rectangle3"><form method="post"  enctype="multipart/form-data">
+  {% csrf_token %}
+ <input type="file"  name="Choose_File" multiple>
+  <input type=submit value="Upload">
+</form>
+</div>
+<div id="myS" class="downav">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeN()"> &times</a>
+  <form method="post" action="/fadein/"  ><br>
+    {% csrf_token %}
+<a style="color:white;font-size:18px">📹Initial Color:<br>
+<input type="range"id="vol" name="initial_color" min="0" max="1"step="0.1"><span id="demo"></span><br>
+⏳Duration (seconds):<br>
+<input type="range"id="vol1" name="duration" min="0" max={{newclip1}}><span id="demo1"></span></a>
+
+<input type="submit" value="Submit" >
+
+
+  </form>
+</div>
+<div id="myS1" class="downav1">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeN1()"> &times</a>
+  <form method="post" action="/fadeout/"  ><br>
+    {% csrf_token %}
+<a style="color:white;font-size:18px">📹Final Color:<br>
+<input type="range"id="vol2" name="initial_color" min="0" max="1"step="0.1"><span id="demo2"></span><br>
+⏳Duration (seconds):<br>
+<input type="range"id="vol3" name="duration" min="0" max={{newclip1}}><span id="demo3"></span></a>
+
+<input type="submit" value="Submit" >
+
+
+  </form>
+</div>
+<div id="myS2" class="downav2">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeN2()"> &times</a>
+  <form method="post" action="/speedx/"  ><br>
+    {% csrf_token %}
+<a style="color:white;font-size:18px">
+⏳Final Duration (seconds):<br>
+<input type="text" name="final_duration" ></a>
+<input type="submit" value="Submit" >
+
+
+  </form>
+</div>
+<div id="myS3" class="downav3">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeN3()"> &times</a>
+  <form method="post" action="/volumex/"  ><br>
+    {% csrf_token %}
+<a style="color:white;font-size:18px">
+🔊Factor :<br>
+<input type="text" name="factor" ></a>
+<input type="submit" value="Submit" >
+
+
+  </form>
+</div>
+<div id="myS4" class="downav4">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeN4()"> &times</a>
+  <form method="post" action="/rotate/"  ><br>
+    {% csrf_token %}
+<a style="color:white;font-size:18px">
+📐Angle :<br>
+<input type="text" name="angle" ></a>
+<input type="submit" value="Submit" >
+
+
+  </form>
+</div>
+<div id="myS5" class="downav5">
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeN5()"> &times</a>
+  <form method="post" action="/gammacorrection/"  ><br>
+    {% csrf_token %}
+<a style="color:white;font-size:18px">
+  γ Factor :<br>
+<input type="text" name="factor1" ></a>
+<input type="submit" value="Submit" >
+
+
+  </form>
+</div>
+</form>
+</div>
+<div id="myS6" class="downav6">
+<a  href="javascript:void(0)" class="closebtn" onclick="closeN6()"> &times</a>
+<form method="post" action="/subclip/"  ><br>
+  {% csrf_token %}
+<a style="color:white;font-size:18px"><br>
+🕒Start Time(Seconds) :
+<input type="text" id="amount" name="start_time" readonly style="border:0;width:10%;color:white;background-color:black"><br>
+🕘End Time(Seconds):
+<input type="text" id="amount1" name="end_time" readonly style="border:0;width:20%;color:white;background-color:black"><br></a>
+<div id="slider-range" style="width:80%;left:20px"></div>
+<input type="submit" value="Submit" >
+
+
+</form>
+</div>
+<div class="rectangle2"><a href='/blackwhite/'><input type=button value="Black & White"> </a> </div>
+<div class="rectangle4"><a href='/paint/'><input type=button value="Painting Effect" ></a> </div>
+<div class="rectangle5"><a href='/mirrory/'><input type=button value="Mirror Y" ></a> </div>
+<div class="rectangle6"><a href='/mirrorx/'><input type=button value="Mirror X"> </a> </div>
+<div class="rectangle7" onclick="openN()"><input type=button value="Fade In" ></div>
+<div class="rectangle8" onclick="openN1()"><input type=button value="Fade Out" ></div>
+<div class="rectangle9" ><a href='/invertcolor/'><input type=button value="Invert Colours" ></a></div>
+<div class="rectangle12" onclick="openN2()"><input type=button value="Speedx" ></div>
+<div class="rectangle11" onclick="openN3()"><input type=button value="Volumex" ></div>
+<div class="rectangle10" ><a href='/timesymmetrize/'><input type=button value="Time Symmetrize" ></a></div>
+<div class="rectangle13" ><a href='/contrast/'><input type=button value="Contrast Correction" ></a></div>
+<div class="rectangle14" ><a href='/reverse/'><input type=button value="Reverse" ></a></div>
+<div class="rectangle15" onclick="openN4()"><input type=button value="Rotate" ></div>
+<div class="rectangle16" onclick="openN5()"><input type=button value="Gamma Correction" ></div>
+<div class="rectangle17" onclick="openN6()"><input type=button value="Trim Clip" ></div>
+<div class="rectangle18"><a href='/evensize/'><input type=button value="Even Size"> </a> </div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+    $( "#slider-range" ).slider({
+
+      range: true,
+      min: 0,
+      max: {{newclip1}},
+      values: [ 0, {{newclip1}} ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val(  ui.values[ 0 ] );
+         $( "#amount1" ).val(  ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val(   $( "#slider-range" ).slider( "values", 0 )  );
+    $( "#amount1" ).val(   $( "#slider-range" ).slider( "values", 1 )  );
+  } );
+function openN() {
+  document.getElementById("myS").style.height = "250px";
+}
+
+function closeN() {
+  document.getElementById("myS").style.height = "0px";
+}
+function openN1() {
+  document.getElementById("myS1").style.height = "250px";
+}
+
+function closeN1() {
+  document.getElementById("myS1").style.height = "0px";
+}
+function openN2() {
+  document.getElementById("myS2").style.height = "250px";
+}
+
+function closeN2() {
+  document.getElementById("myS2").style.height = "0px";
+}
+function openN3() {
+  document.getElementById("myS3").style.height = "250px";
+}
+
+function closeN3() {
+  document.getElementById("myS3").style.height = "0px";
+}
+function openN4() {
+  document.getElementById("myS4").style.height = "250px";
+}
+
+function closeN4() {
+  document.getElementById("myS4").style.height = "0px";
+}
+function openN5() {
+  document.getElementById("myS5").style.height = "250px";
+}
+
+function closeN5() {
+  document.getElementById("myS5").style.height = "0px";
+}
+function openN6() {
+  document.getElementById("myS6").style.height = "220px";
+}
+
+function closeN6() {
+  document.getElementById("myS6").style.height = "0px";
+}
+var slider = document.getElementById("vol");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;}
+  var slider1 = document.getElementById("vol1");
+  var output1 = document.getElementById("demo1");
+  output1.innerHTML = slider1.value;
+
+  slider1.oninput = function() {
+    output1.innerHTML = this.value;}
+    var slider2 = document.getElementById("vol2");
+    var output2 = document.getElementById("demo2");
+    output2.innerHTML = slider2.value;
+
+    slider2.oninput = function() {
+      output2.innerHTML = this.value;
+}
+var slider3 = document.getElementById("vol3");
+var output3 = document.getElementById("demo3");
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+var slider4 = document.getElementById("vol4");
+var output4 = document.getElementById("demo4");
+output4.innerHTML = slider4.value;
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+</script>
+</body>
+</html>
